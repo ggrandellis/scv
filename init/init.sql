@@ -29,4 +29,4 @@ CREATE TABLE IF NOT EXISTS public.viajes_sube
     "CANTIDAD" character varying(20) COLLATE pg_catalog."default"
 );
 
-\copy public.viajes_subte FROM '/var/lib/csv/dataset_viajes_sube.csv' DELIMITER ',' CSV;
+\copy public.viajes_sube FROM '/var/lib/csv/dataset_viajes_sube.csv' DELIMITER ',' CSV;
