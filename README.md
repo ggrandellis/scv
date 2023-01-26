@@ -27,6 +27,8 @@ https://www.buenosaires.gob.ar/areas/med_ambiente/apra/calidad_amb/red_monitoreo
 
 ## Ejercicio 3
 
+Solved in view ejercicio3.sql. As there is no a standar criteria to combinate the 3 factores involved in measures, I just adjust the scale for CO measure and adds it with other 2 to get a kind of index. This criteria is very simple and can be optimized but is needed more technical information related to the weight of measures.
+
 ## Ejercicio 4
 
 ## Ejercicio 5
