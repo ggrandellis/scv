@@ -21,7 +21,7 @@ Solved uploading both CSV using the COPY command in the init.sql file to be exec
 
 ## Ejercicio 2
 
-Solved in view ejercicio2.sql. Miniunms threshold to consider a "good day" taken from:
+Solved in view ejercicio2.sql. Miniums threshold to consider a "good day" taken from:
 
 https://www.buenosaires.gob.ar/areas/med_ambiente/apra/calidad_amb/red_monitoreo/index.php?contaminante=1&estacion=1&fecha_dia=23&fecha_mes=01&fecha_anio=2023&menu_id=34234&buscar=Buscar
 
