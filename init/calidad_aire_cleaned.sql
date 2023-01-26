@@ -3,6 +3,7 @@ drop view calidad_aire_cleaned
 create view calidad_aire_cleaned as 
 select 
 TO_DATE(SUBSTRING("FECHA",1,9), 'DDMONYYYY') as FECHA_DATE, 
+"HORA" as HORA,
 -- CO cleaned
 CAST ( CASE WHEN lower("CO_CENTENARIO") = 's/d' THEN NULL 
 	        WHEN "CO_CENTENARIO" = '#REF!' THEN NULL
