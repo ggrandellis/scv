@@ -11,9 +11,10 @@ docker-compose stop
 ```
 
 ## Kill docker compose
-docker ps
-
 ```
+docker ps
+```
+
 ## Ejercicio 1
 
 Solved uploading both CSV using the COPY command in the init.sql file to be executed when Postgre database is started
