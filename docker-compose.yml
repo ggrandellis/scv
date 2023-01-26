@@ -1,0 +1,44 @@
+version: '3.8'
+
+networks:
+  postgres:
+    driver: bridge
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:14.1-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5436:5432'
+    volumes:
+      - ./volumes/db:/var/lib/postgresql/data
+      - ./init/init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - ./init/csv:/var/lib/csv
+      - ./init/pg_hba.conf:/scv/pg_hba.conf
+    networks:
+      - postgres
+    #command: postgres -c hba_file=/scv/pg_hba.conf
+    restart: always
+ 
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "8080:80"
+    volumes:
+       - ./volumes/pgadmin:/var/lib/pgadmin
+    networks:
+      - postgres
+    restart: always
+
+volumes:
+  postgres:
+    driver: local
+  pgadmin:
+    driver: local
