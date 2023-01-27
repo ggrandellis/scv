@@ -35,6 +35,8 @@ Solved in view ejercicio4.sql. Same criteria than exercise 3 taken into account 
 
 ## Ejercicio 5
 
+Solved in view ejercicio5.sql. Joining datasets cleaned (viajes_subte_cleaned) with days with worst/better index of contamination multiplied by passengers to measure impact on population.
+
 ## Ejercicio 6
 
 Solved using docker-compose to start an image with Postgre database and PgAdmin (IDE) to run the querys that answer questiones in previous items.
