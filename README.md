@@ -31,6 +31,8 @@ Solved in view ejercicio3.sql. As there is no a standar criteria to combinate th
 
 ## Ejercicio 4
 
+Solved in view ejercicio4.sql. Same criteria than exercise 3 taken into account to determine better days. Use of analytic functions to rank days and get the top 3 for every month.
+
 ## Ejercicio 5
 
 ## Ejercicio 6
