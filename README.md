@@ -1,6 +1,6 @@
 ## SCV Excersise
 
-## Start docker_compose: create the postgres database and pgadmin
+## Start docker_compose: create the postgres database and pgadmin (IDE)
 ```
 docker-compose up -d
 ```
